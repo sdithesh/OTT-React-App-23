@@ -1,0 +1,73 @@
+@import '../../styles/constants';
+
+.register-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $background_gradient,url("../../../public/Images/loginPage.png");
+    background-size: cover;
+    gap:40px;
+    height:100vh;
+}
+.register-form{
+    max-width:686px;
+    width:100%;
+    color: $pure_white;
+    background: $dark_blue;
+    padding:32px 64px;
+    box-shadow: 10px 10px 10px $pure_black;
+}
+
+.blur-effect{
+    width:40%;
+    text-align: center;
+    position: relative;
+
+}
+.blur-effect::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color:$pure_black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter:blur(25px);
+   
+}
+.register-container__header{
+    color: $brick_red;
+    font-size:$font_size_xl;
+    font-weight: 600;
+    z-index:1;
+    position: relative;
+}
+
+
+.register-header{
+    font-size: $font_size_md;
+    text-align: center;
+    font-weight: 600;
+}
+
+.register-button{
+    color: $pure-white;
+    background-color: $brick_red;
+    margin-top:8px;
+    
+}
+.register-input__bg{
+background-color: $navy_blue;
+}
+
+.register-form-wrapper{
+ margin:0 16px 16px 16px;
+ width:100%;
+ gap:32px;
+ align-items:center;
+ display: flex;
+ flex-direction: column;
+
+}
