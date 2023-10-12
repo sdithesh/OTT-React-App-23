@@ -13,10 +13,12 @@ function Login() {
   return (
     <div>
       <Button
-        className="registe-button"
-        value="SignIn"
+        className="login-button"
+        type="secondary"
         onclick={onSignInClickHandler}
-      ></Button>
+      >
+        SignIn
+      </Button>
     </div>
   );
 }

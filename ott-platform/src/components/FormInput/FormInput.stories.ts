@@ -1,18 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from "@storybook/react";
 
-import FormInput from './FormInput';
-import './FormInput.scss';
-import '../../index.scss'
+import FormInput from "./FormInput";
+import "./FormInput.scss";
+import "../../index.scss";
 
 const meta = {
-  title: 'compoment/FormInput',
+  title: "compoment/FormInput",
   component: FormInput,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
-  tags: ['autodocs'],
-
-  
+  tags: ["autodocs"],
 } satisfies Meta<typeof FormInput>;
 
 export default meta;
@@ -21,28 +19,27 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Mail: Story = {
   args: {
-    label: 'email',
-    type:'text',
-    placeholder:'email',
-    className:'input-bg',
+    label: "email",
+    type: "text",
+    placeholder: "email",
+    className: "input-field input-bg",
   },
 };
 
 export const Password: Story = {
   args: {
-    label: 'Password',
-    type:'password',
-    placeholder:'password',
-    className:'input-bg',
+    label: "Password",
+    type: "password",
+    placeholder: "password",
+    className: "input-field input-bg",
   },
 };
 
 export const Name: Story = {
   args: {
-    label: 'Name',
-    type:'text',
-    placeholder:'Name',
-    className:'input-bg',
+    label: "Name",
+    type: "text",
+    placeholder: "Name",
+    className: "input-field input-bg",
   },
 };
-

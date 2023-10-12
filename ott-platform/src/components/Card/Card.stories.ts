@@ -1,18 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from "@storybook/react";
 
-import Card from './Card';
-import './Card.scss';
-import '../../index.scss'
+import Card from "./Card";
+import "./Card.scss";
+import "../../index.scss";
 
 const meta = {
-  title: 'compoment/Card',
+  title: "compoment/Card",
   component: Card,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
-  tags: ['autodocs'],
-
-  
+  tags: ["autodocs"],
 } satisfies Meta<typeof Card>;
 
 export default meta;
@@ -21,20 +19,14 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {
-    className:'card-register',
-    children:''
+    className: "card-primary",
+    children: "",
   },
 };
 
 export const SignIn: Story = {
-args: {
-  className:'card-signIn',
-  children:''
-},
-};
-export const Secondary: Story = {
   args: {
-    className:'card-signUp',
-    children:''
+    className: "card-secondary",
+    children: "",
   },
 };

@@ -1,16 +1,17 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./Button.scss";
 
 type ButtonProps = {
-  value: string;
-  className: string;
+  className?: string;
   onclick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  children: ReactNode;
+  type: string;
 };
-function Button({ value, className, onclick }: ButtonProps) {
+function Button({ className, onclick, children, type }: ButtonProps) {
   return (
     <>
-      <button className={`button ${className}`} onClick={onclick}>
-        {value}
+      <button className={`button ${type} ${className}`} onClick={onclick}>
+        {children}
       </button>
     </>
   );

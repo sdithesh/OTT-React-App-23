@@ -16,40 +16,44 @@ function Register() {
   return (
     <div className="register-container">
       <h3 className="register-container__blur-effect">
-        <span className="register-container__header">Movie OTT</span>
+        <span className="register-container__blur-effect__header">
+          Movie OTT
+        </span>
       </h3>
-      <Card className="register-form">
-        <div className="register-form-wrapper">
-          <p className="register-header">Register</p>
+      <Card className="register-container__form">
+        <div className="register-container__form__wrapper">
+          <p className="register-container__form__wrapper__header">Register</p>
           <FormInput
             label="Full Name"
             type="text"
             placeholder="Full Name"
-            className="register-input__bg"
+            className="register-container__form__wrapper__input-bg"
           ></FormInput>
           <FormInput
             label="Email"
             type="mail"
             placeholder="Email"
-            className="register-input__bg"
+            className="register-container__form__wrapper__input-bg"
           ></FormInput>
           <FormInput
             label="Password"
             type="password"
             placeholder="Password"
-            className="register-input__bg"
+            className="register-container__form__wrapper__input-bg"
           ></FormInput>
           <FormInput
             label="Confirm Password"
             type="password"
             placeholder="Confirm password"
-            className="register-input__bg"
+            className="register-container__form__wrapper__input-bg"
           ></FormInput>
           <Button
-            className="register-button"
-            value="Register"
+            className="register-container__form__wrapper__button"
+            type="primary"
             onclick={onRegisterClickHandler}
-          ></Button>
+          >
+            Register
+          </Button>
         </div>
       </Card>
     </div>

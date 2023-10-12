@@ -1,27 +1,20 @@
-@import '../../styles/constants.scss';
+@import "../../styles/constants.scss";
 
-
-.card{
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
+.card {
+  align-items: center;
+  border-radius: 12px;
+  display: flex;
+  background-color: $dark_blue;
 }
 
-.card-signIn{
-    width:300px;
-    height:300px;
-    background-color: $pure_black;
-    color:$pure_white;
+.card-secondary {
+  background-color: $pure_black;
+  color: $pure_white;
+  height: 300px;
+  width: 300px;
 }
-.card-signUp{
-    width:600px;
-    height:600px;
-    background-color: $navy_blue;
-    color:$orange;
-}
-.card-register{
-    width:600px;
-    height:600px;
-    background-color: $navy_blue;
-    color:$pure_white;
+.card-primary {
+  color: $pure_white;
+  height: 600px;
+  width: 600px;
 }
