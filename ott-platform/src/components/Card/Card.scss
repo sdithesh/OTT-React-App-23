@@ -1,0 +1,20 @@
+@import "../../styles/constants.scss";
+
+.card {
+  align-items: center;
+  border-radius: 12px;
+  display: flex;
+  background-color: $dark_blue;
+}
+
+.card-secondary {
+  background-color: $pure_black;
+  color: $pure_white;
+  height: 300px;
+  width: 300px;
+}
+.card-primary {
+  color: $pure_white;
+  height: 600px;
+  width: 600px;
+}

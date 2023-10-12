@@ -1,0 +1,70 @@
+@import "../../styles/constants";
+
+.register-container {
+  align-items: center;
+  background: $background_gradient, url("../../../public/Images/loginPage.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: 100vh;
+  justify-content: center;
+
+  &__blur-effect {
+    text-align: center;
+    position: relative;
+    width: 40%;
+
+    &::after {
+      border-radius: 50%;
+      background-color: $pure_black;
+      content: "";
+      filter: blur(25px);
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    &__header {
+      color: $brick_red;
+      font-size: $font_size_xl;
+      font-weight: 600;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__form {
+    background: $dark_blue;
+    box-shadow: 10px 10px 10px $pure_black;
+    color: $pure_white;
+    max-width: 686px;
+    padding: 32px 64px;
+    width: 100%;
+
+    &__wrapper {
+      align-items: center;
+      display: flex;
+      gap: 32px;
+      flex-direction: column;
+      margin: 0 16px 16px 16px;
+      width: 100%;
+
+      &__header {
+        font-size: $font_size_md;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      &__button {
+        margin-top: 8px;
+      }
+
+      &__input-bg {
+        background-color: $navy_blue;
+      }
+    }
+  }
+}
